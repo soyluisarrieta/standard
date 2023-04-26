@@ -1,4 +1,4 @@
-# Pasos desde 0
+# Pasos desde 0 para instalar el Linter de [StandardJS]([https://](https://standardjs.com/))
 
 ### 1. Crear proyecto dentro del directorio:
 
@@ -14,7 +14,7 @@ npm install standard -D
 
 ### 3. En el archivo package.json, debajo de las devDependencies de la siguiente manera:
 
-```javascript
+```json
 "devDependencies": {
   "standard": "^17.0.0"
 },
@@ -34,11 +34,11 @@ console.log('hola mundo');
 
 ---
 
-## Crear scripts para reportes y correcciones
+# Crear scripts para reportes y correcciones
 
 En el package.json agregamos los scripts:
 
-```javascript
+```json
 "scripts": {
     "lint": "standard",
     "lint:fix": "standard  --fix"
@@ -58,3 +58,19 @@ npm run lint
 ```bash
 npm run lint:fix
 ```
+
+# Auto-corregir al guardar
+
+1. Crear carpeta `.vscode/`
+2. Dentro de la carpeta crear el archivo `settings.json`
+3. En el archivo ingresar el siguiente código:
+
+```json
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  }
+}
+```
+
+Con esto, al presionar `Ctrl+S` se autocorregirá el código dependiendo de las reglas de [StandardJS]([https://](https://standardjs.com/))
