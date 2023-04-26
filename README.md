@@ -31,3 +31,30 @@ npm install standard -D
 // "Extra semicolon." Significa que el punto y coma sobra y que deberías eliminarlo.
 console.log('hola mundo');
 ```
+
+---
+
+## Crear scripts para reportes y correcciones
+
+En el package.json agregamos los scripts:
+
+```javascript
+"scripts": {
+    "lint": "standard",
+    "lint:fix": "standard  --fix"
+  }
+```
+
+### Para ejecutarlos:
+
+- Mostrar reportes
+
+```bash
+npm run lint
+```
+
+- Corregir todo
+
+```bash
+npm run lint:fix
+```
