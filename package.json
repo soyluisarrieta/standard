@@ -4,7 +4,8 @@
   "description": "Aprendiendo a instalar linter",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "standard",
+    "lint:fix": "standard  --fix"
   },
   "keywords": [],
   "author": "",
