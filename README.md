@@ -1,18 +1,12 @@
 # Pasos desde 0 para instalar el Linter de [StandardJS]([https://](https://standardjs.com/))
 
-### 1. Crear proyecto dentro del directorio:
-
-```bash
-npm init -y
-```
-
-### 2. Instalar Standard JS como dependencia de desarrollo
+### 1. Instalar Standard JS como dependencia de desarrollo
 
 ```bash
 npm install standard -D
 ```
 
-### 3. En el archivo package.json, debajo de las devDependencies de la siguiente manera:
+### 2. En el archivo package.json, debajo de las devDependencies de la siguiente manera:
 
 ```json
 "devDependencies": {
