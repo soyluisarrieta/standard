@@ -44,6 +44,32 @@ console.log('hola mundo');
 
 ---
 
+## Configurar standardjs en los proyectos de vite
+
+Ve al archivo `.eslintrc.cjs` y solo cambia los extends:
+
+```js
+module.exports = {
+  root: true,
+  env: { browser: true, es2020: true },
+  extends: [
+    './node_modules/standard/eslintrc.json'
+  ],
+  ignorePatterns: ['dist', '.eslintrc.cjs'],
+  parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
+  settings: { react: { version: '18.2' } },
+  plugins: ['react-refresh'],
+  rules: {
+    'react-refresh/only-export-components': [
+      'warn',
+      { allowConstantExport: true },
+      // ⬇ Reglas que suelo desactivar
+      'import/no-absolute-path': 'off',
+    ],
+  },
+}
+```
+
 # Crear scripts para reportes y correcciones
 
 En el package.json agregamos los scripts:
