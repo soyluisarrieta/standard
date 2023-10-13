@@ -110,3 +110,6 @@ npm run lint:fix
 ```
 
 Con esto, al presionar `Ctrl+S` se autocorregirá el código dependiendo de las reglas de [StandardJS]([https://](https://standardjs.com/))
+
+Contribuciones
+Te invito a compartir alguna sugerencia en una [solicitud de extracción](https://github.com/soyluisarrieta/standardjs/pulls).
