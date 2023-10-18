@@ -70,7 +70,7 @@ module.exports = {
 }
 ```
 
-# Crear scripts para reportes y correcciones
+## Crear scripts para reportes y correcciones
 
 En el package.json agregamos los scripts:
 
@@ -95,7 +95,7 @@ npm run lint
 npm run lint:fix
 ```
 
-# Auto-corregir al guardar
+## Auto-corregir al guardar
 
 1. Crear carpeta `.vscode/`
 2. Dentro de la carpeta crear el archivo `settings.json`
