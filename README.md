@@ -16,26 +16,24 @@
 </p>
 
 
-### 1. Instalar Standard JS como dependencia de desarrollo
+1. Instalar Standard JS como dependencia de desarrollo
+    ```bash
+    npm install standard -D
+    ```
 
-```bash
-npm install standard -D
-```
-
-### 2. En el archivo package.json, debajo de las devDependencies de la siguiente manera:
-
-```json
-"devDependencies": {
-  "standard": "^17.0.0"
-},
-"eslintConfig": {
-  "extends": "./node_modules/standard/eslintrc.json"
-}
-```
+2. En el archivo package.json, debajo de las devDependencies de la siguiente manera:
+    ```json
+    "devDependencies": {
+      "standard": "^17.0.0"
+    },
+    "eslintConfig": {
+      "extends": "./node_modules/standard/eslintrc.json"
+    }
+    ```
 
 ---
 
-#### Probar si funciona: Crear un archivo por ejemplo "prueba-eslint.js" y pegar lo siguiente:
+Probar si funciona: Crear un archivo por ejemplo "prueba-eslint.js" y pegar lo siguiente:
 
 ```javascript
 // "Extra semicolon." Significa que el punto y coma sobra y que deberías eliminarlo.
@@ -85,15 +83,15 @@ En el package.json agregamos los scripts:
 
 - Mostrar reportes
 
-```bash
-npm run lint
-```
+  ```bash
+  npm run lint
+  ```
 
 - Corregir todo
 
-```bash
-npm run lint:fix
-```
+  ```bash
+  npm run lint:fix
+  ```
 
 ## Auto-corregir al guardar
 
@@ -101,13 +99,13 @@ npm run lint:fix
 2. Dentro de la carpeta crear el archivo `settings.json`
 3. En el archivo ingresar el siguiente código:
 
-```json
-{
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true
-  }
-}
-```
+    ```json
+    {
+      "editor.codeActionsOnSave": {
+        "source.fixAll": true
+      }
+    }
+    ```
 
 Con esto, al presionar `Ctrl+S` se autocorregirá el código dependiendo de las reglas de [StandardJS]([https://](https://standardjs.com/))
 
