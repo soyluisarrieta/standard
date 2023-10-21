@@ -24,7 +24,7 @@
 2. En el archivo package.json, debajo de las devDependencies de la siguiente manera:
     ```json
     "devDependencies": {
-      "standard": "^17.0.0"
+      "standard": "^17.1.0"
     },
     "eslintConfig": {
       "extends": "./node_modules/standard/eslintrc.json"
