@@ -31,16 +31,12 @@
     }
     ```
 
----
-
 Probar si funciona: Crear un archivo por ejemplo "prueba-eslint.js" y pegar lo siguiente:
 
 ```javascript
 // "Extra semicolon." Significa que el punto y coma sobra y que deberías eliminarlo.
 console.log('hola mundo');
 ```
-
----
 
 ## Configurar standardjs en los proyectos de vite
 
